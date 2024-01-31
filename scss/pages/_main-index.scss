@@ -1,0 +1,59 @@
+.main-index{
+    .anuncio{
+            img{
+                width: 100%;
+                height: 20rem;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+    .imagenes{
+            display: grid;
+        grid-template-columns: repeat(2, 50vh);
+        grid-template-rows: repeat(2, 40vh);
+        grid-template-areas: 
+            "card1 card2 "
+            "card1 card3 ";
+        gap:10px;
+        justify-content: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .card1 
+                { grid-area: card1; }
+            .card2 
+                { grid-area: card2; }
+            .card3 
+                { grid-area: card3; }
+        }
+        .anuncio-descuento{ 
+            img{
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px ;
+            }
+        }
+        .productos{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 8rem;
+            img{
+                width: 349px;
+                height: 350px;
+            }
+            h2{
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        .just-do-it{
+            img{
+                width: 100%;
+                margin-top: 25px;
+                margin-bottom: 25px ;
+            }
+        }   
+
+}

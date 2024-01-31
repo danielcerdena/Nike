@@ -1,0 +1,30 @@
+/*Header*/
+header{
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding-left: 40px;
+            a{
+                text-decoration: none;
+            }
+            img{
+                width: 70px;
+                }
+        }
+    background-color: black;
+    margin: 0px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    position: sticky;
+    top:0;
+
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Ajusta los elementos en una fila o columna según el espacio disponible */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        gap: 10px; /* Espaciado entre elementos */
+    }
+}

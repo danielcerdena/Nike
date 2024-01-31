@@ -1,0 +1,22 @@
+.main-pages{
+    .flex-productos{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 13%;
+        row-gap: 120px;
+        .producto{
+            img{
+                width: 349px;
+                height: 350px;
+            }
+        }
+    }
+    .video{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        h2{
+            width: 50rem;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    .enlaces{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        width: 40px;
+        height: 40px;
+        a{
+            text-decoration: none;
+            color: antiquewhite;
+        }
+    }
+    .img-footer {
+        display: inline-block; 
+        margin-right: 100px; 
+    }
+    .position-fixed{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        img{
+            width: 50px;
+        }
+    }
+}

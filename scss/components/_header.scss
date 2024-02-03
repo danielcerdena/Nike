@@ -14,9 +14,7 @@ header{
     background-color: black;
     margin: 0px;
     border-bottom: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex (flex, center, space-between);
     padding: 30px;
     position: sticky;
     top:0;

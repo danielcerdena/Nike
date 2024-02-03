@@ -26,6 +26,11 @@ h1 {
   color: coral;
 }
 
+.main-pages .flex-productos .producto img, .main-index .productos img {
+  width: 349px;
+  height: 350px;
+}
+
 /*Header*/
 header {
   background-color: black;
@@ -94,10 +99,6 @@ header nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 8rem;
 }
-.main-index .productos img {
-  width: 349px;
-  height: 350px;
-}
 .main-index .productos h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -111,12 +112,8 @@ header nav {
 .main-pages .flex-productos {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 13%;
+  column-gap: 15%;
   row-gap: 120px;
-}
-.main-pages .flex-productos .producto img {
-  width: 349px;
-  height: 350px;
 }
 .main-pages .video {
   display: flex;
@@ -158,6 +155,133 @@ footer .position-fixed {
 }
 footer .position-fixed img {
   width: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Estilos para tablet */
+  /*Main*/
+  .main-index .anuncio img {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .main-index .imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 20vh);
+    grid-template-rows: repeat(2, 20vh);
+    grid-template-areas: "card1 card2 " "card1 card3 ";
+    gap: 5px;
+    justify-content: center;
+  }
+  .main-index .imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main-index .imagenes .card1 {
+    grid-area: card1;
+  }
+  .main-index .imagenes .card2 {
+    grid-area: card2;
+  }
+  .main-index .imagenes .card3 {
+    grid-area: card3;
+  }
+  .main-index .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .main-index .productos h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .main-index .just-do-it img {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 768px) {
+  .main-index {
+    /* Estilos para móviles */
+    /* Main */
+    /* Footer */
+  }
+  .main-index header {
+    background-color: black;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 10px;
+  }
+  .main-index nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-index nav a button {
+    width: 100%;
+  }
+  .main-index nav a {
+    color: white;
+    text-decoration: none;
+  }
+  .main-index .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .main-index .logo img {
+    width: 40px;
+  }
+  .main-index .main-pages .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .main-index .main-pages .video h2 {
+    width: 15rem;
+    display: flex;
+  }
+  .main-index .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .main-index .productos .producto img {
+    width: 300px;
+    height: 300px;
+  }
+  .main-index .anuncio img {
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .main-index .imagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: "card1 " "card2 " "card3";
+    gap: 10px;
+    justify-content: center;
+  }
+  .main-index .imagenes img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-index .imagenes .card1 {
+    grid-area: card1;
+  }
+  .main-index .imagenes .card2 {
+    grid-area: card2;
+  }
+  .main-index .imagenes .card3 {
+    grid-area: card3;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

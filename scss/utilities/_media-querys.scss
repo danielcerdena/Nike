@@ -1,0 +1,148 @@
+    // Media Query para tablets (max-width: 1024px)
+    @media screen and (max-width: 1024px) {
+        /* Estilos para tablet */
+    /*Main*/
+    .main-index{
+        .anuncio{
+                img{
+                    width: 100%;
+                    height: 10rem;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+            }
+        .imagenes{
+                display: grid;
+            grid-template-columns: repeat(2, 20vh);
+            grid-template-rows: repeat(2, 20vh);
+            grid-template-areas: 
+                "card1 card2 "
+                "card1 card3 ";
+            gap:5px;
+            justify-content: center;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .card1 
+                    { grid-area: card1; }
+                .card2 
+                    { grid-area: card2; }
+                .card3 
+                    { grid-area: card3; }
+            }
+            .productos{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 4rem;
+                img{
+                    @extend %tamaño;
+                }
+                h2{
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+            }
+            .just-do-it{
+                img{
+                    width: 100%;
+                    margin-top: 25px;
+                    margin-bottom: 25px ;
+                }
+            }  
+    
+    
+    // Media Query para dispositivos móviles (max-width: 768px)
+    @media screen and (max-width: 768px) {
+        /* Estilos para móviles */
+        header {
+            background-color: black;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            padding: 10px;
+        }
+    
+        nav {
+            display: flex;
+            flex-direction: column;
+    
+            a button {
+                width: 100%;
+            }
+    
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    
+        .logo {
+            display: flex;
+            justify-content: center;
+    
+            img {
+                width: 40px;
+            }
+        }
+    
+        /* Main */
+        .main-pages {
+            .video {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+                h2 {
+                    width: 15rem;
+                    display: flex;
+                }
+            }
+        }
+        
+        .productos {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            .producto{
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+        .anuncio img {
+            width: 100%;
+            height: 5rem;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+    
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 300px);
+            grid-template-areas:
+                "card1 "
+                "card2 "
+                "card3";
+            gap: 10px;
+            justify-content: center;
+    
+            img {
+                width: 100%;
+                height: 100%;
+            }
+    
+            .card1 { grid-area: card1; }
+            .card2 { grid-area: card2; }
+            .card3 { grid-area: card3; }
+        }
+
+        /* Footer */
+    }
+}
+    }

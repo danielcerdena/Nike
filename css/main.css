@@ -320,13 +320,13 @@ footer .position-fixed img {
   .main-pages .flex-productos .video h2 {
     width: 300px;
   }
-  .anuncio img {
+  .main-index .anuncio img {
     width: 100%;
     height: 5rem;
     margin-bottom: 10px;
     margin-top: 10px;
   }
-  .imagenes {
+  .main-index .imagenes {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 300px);
@@ -334,20 +334,34 @@ footer .position-fixed img {
     gap: 10px;
     justify-content: center;
   }
-  .imagenes img {
-    width: 100%;
-    height: 100%;
+  .main-index .imagenes img {
+    width: 250px;
+    height: 250px;
   }
-  .imagenes .card1 {
+  .main-index .imagenes .card1 {
     grid-area: card1;
   }
-  .imagenes .card2 {
+  .main-index .imagenes .card2 {
     grid-area: card2;
   }
-  .imagenes .card3 {
+  .main-index .imagenes .card3 {
     grid-area: card3;
   }
-  /* Footer */
+  .main-index .productos {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main-index .productos .producto img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

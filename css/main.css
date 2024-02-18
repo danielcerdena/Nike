@@ -111,9 +111,25 @@ header nav {
 
 .main-pages .flex-productos {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  column-gap: 15%;
-  row-gap: 120px;
+}
+.main-pages .flex-productos .flex-productos1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.main-pages .flex-productos .flex-productos2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .main-pages .video {
   display: flex;
@@ -157,7 +173,7 @@ footer .position-fixed img {
   width: 50px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* Estilos para tablet */
   /*Main*/
   .main-index .anuncio img {
@@ -203,13 +219,42 @@ footer .position-fixed img {
     margin-bottom: 25px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 768px) {
-  .main-index {
-    /* Estilos para móviles */
-    /* Main */
-    /* Footer */
-  }
-  .main-index header {
+.main-pages .flex-productos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main-pages .flex-productos .flex-productos1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-pages .flex-productos .flex-productos2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-pages .flex-productos .producto img {
+  width: auto;
+}
+.main-pages .video {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.main-pages .video h2 {
+  width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para móviles */
+  header {
     background-color: black;
     border-bottom: 1px solid black;
     display: flex;
@@ -218,50 +263,70 @@ footer .position-fixed img {
     position: sticky;
     padding: 10px;
   }
-  .main-index nav {
+  nav {
     display: flex;
     flex-direction: column;
   }
-  .main-index nav a button {
+  nav a button {
     width: 100%;
   }
-  .main-index nav a {
+  nav a {
     color: white;
     text-decoration: none;
   }
-  .main-index .logo {
+  .logo {
     display: flex;
     justify-content: center;
   }
-  .main-index .logo img {
+  .logo img {
     width: 40px;
   }
-  .main-index .main-pages .video {
+  /* Main */
+  .main-pages .flex-productos {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15%;
+  }
+  .main-pages .flex-productos .flex-productos1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+  }
+  .main-pages .flex-productos .flex-productos2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+  }
+  .main-pages .flex-productos .producto img {
+    width: auto;
+  }
+  .main-pages .flex-productos .video {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
-  .main-index .main-pages .video h2 {
-    width: 15rem;
-    display: flex;
-  }
-  .main-index .productos {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .main-index .productos .producto img {
+  .main-pages .flex-productos .video video {
     width: 300px;
-    height: 300px;
   }
-  .main-index .anuncio img {
+  .main-pages .flex-productos .video h2 {
+    width: 300px;
+  }
+  .anuncio img {
     width: 100%;
     height: 5rem;
     margin-bottom: 10px;
     margin-top: 10px;
   }
-  .main-index .imagenes {
+  .imagenes {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 300px);
@@ -269,19 +334,20 @@ footer .position-fixed img {
     gap: 10px;
     justify-content: center;
   }
-  .main-index .imagenes img {
+  .imagenes img {
     width: 100%;
     height: 100%;
   }
-  .main-index .imagenes .card1 {
+  .imagenes .card1 {
     grid-area: card1;
   }
-  .main-index .imagenes .card2 {
+  .imagenes .card2 {
     grid-area: card2;
   }
-  .main-index .imagenes .card3 {
+  .imagenes .card3 {
     grid-area: card3;
   }
+  /* Footer */
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -26,16 +26,15 @@ h1 {
   color: coral;
 }
 
-.main-pages .flex-productos .producto img, .main-index .productos img {
+.main-index .productos img {
   width: 349px;
   height: 350px;
 }
 
 /*Header*/
 header {
-  background-color: black;
+  background-color: white;
   margin: 0px;
-  border-bottom: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,18 +53,12 @@ header .logo a {
 header .logo img {
   width: 70px;
 }
-header nav {
-  display: flex;
-  flex-wrap: wrap; /* Ajusta los elementos en una fila o columna según el espacio disponible */
-  justify-content: center; /* Centra los elementos horizontalmente */
-  gap: 10px; /* Espaciado entre elementos */
-}
 
 .main-index .anuncio img {
   width: 100%;
   height: 20rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 .main-index .imagenes {
   display: grid;
@@ -109,6 +102,11 @@ header nav {
   margin-bottom: 25px;
 }
 
+.main-pages .anuncio-mujeres {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .main-pages .flex-productos {
   display: flex;
   flex-direction: column;
@@ -131,38 +129,57 @@ header nav {
   justify-content: space-around;
   align-items: center;
 }
+.main-pages .flex-productos .producto img {
+  width: 350px;
+  height: 349px;
+}
+.main-pages .swiffy-slider {
+  width: 95%;
+}
 .main-pages .video {
   display: flex;
   align-items: center;
   margin-top: 50px;
 }
 .main-pages .video h2 {
-  width: 50rem;
+  width: 100%;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main-contacto .img-contacto {
+  width: 30%;
+  height: 40%;
+}
+.main-contacto .img-contacto img {
+  width: 100%;
+  height: 100%;
+}
+.main-contacto .contacto {
+  width: 50%;
+  text-align: center;
 }
 
 footer {
   width: 100%;
   background-color: black;
   color: white;
-  text-align: center;
   font-size: 12px;
-  padding: 15px;
+  padding: 20px;
 }
 footer .enlaces {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
   gap: 20px;
   width: 40px;
   height: 40px;
+  justify-content: space-between;
 }
-footer .enlaces a {
-  text-decoration: none;
-  color: antiquewhite;
-}
-footer .img-footer {
-  display: inline-block;
-  margin-right: 100px;
+footer .enlaces a img {
+  width: 20px;
 }
 footer .position-fixed {
   position: fixed;
@@ -189,6 +206,7 @@ footer .position-fixed img {
     grid-template-areas: "card1 card2 " "card1 card3 ";
     gap: 5px;
     justify-content: center;
+    justify-items: center;
   }
   .main-index .imagenes img {
     width: 100%;
@@ -209,6 +227,10 @@ footer .position-fixed img {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
   }
+  .main-index .productos img {
+    width: 350px;
+    height: 349px;
+  }
   .main-index .productos h2 {
     text-align: center;
     margin-bottom: 10px;
@@ -218,6 +240,14 @@ footer .position-fixed img {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+}
+.main-pages .anuncio-mujeres {
+  display: flex;
+  justify-content: center;
+}
+.main-pages .anuncio-mujeres img {
+  width: 90%;
+  object-fit: cover;
 }
 .main-pages .flex-productos {
   display: flex;
@@ -232,6 +262,10 @@ footer .position-fixed img {
   justify-content: space-around;
   align-items: center;
 }
+.main-pages .flex-productos .flex-productos1 .producto img {
+  width: 300px;
+  height: 300px;
+}
 .main-pages .flex-productos .flex-productos2 {
   display: flex;
   flex-direction: row;
@@ -240,8 +274,12 @@ footer .position-fixed img {
   justify-content: space-around;
   align-items: center;
 }
+.main-pages .flex-productos .flex-productos2 .producto img {
+  width: 300px;
+  height: 300px;
+}
 .main-pages .flex-productos .producto img {
-  width: auto;
+  width: 50px;
 }
 .main-pages .video {
   display: flex;
@@ -249,14 +287,31 @@ footer .position-fixed img {
   margin-top: 50px;
 }
 .main-pages .video h2 {
-  width: 250px;
+  width: 100%;
+}
+
+footer .enlaces {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 40px;
+  height: 40px;
+  justify-content: space-between;
+}
+footer .img-footer {
+  justify-content: end;
+  display: block;
+  margin-right: 100px;
+}
+footer .img-footer img {
+  width: 60px;
 }
 
 @media screen and (max-width: 768px) {
   /* Estilos para móviles */
   header {
-    background-color: black;
-    border-bottom: 1px solid black;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -282,6 +337,14 @@ footer .position-fixed img {
     width: 40px;
   }
   /* Main */
+  .main-pages .anuncio-mujeres {
+    display: flex;
+    justify-content: center;
+  }
+  .main-pages .anuncio-mujeres img {
+    width: 90%;
+    object-fit: cover;
+  }
   .main-pages .flex-productos {
     display: flex;
     flex-wrap: wrap;
@@ -304,7 +367,8 @@ footer .position-fixed img {
     gap: 15px;
   }
   .main-pages .flex-productos .producto img {
-    width: auto;
+    width: 300px;
+    height: 300px;
   }
   .main-pages .flex-productos .video {
     display: flex;

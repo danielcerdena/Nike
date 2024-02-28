@@ -1,0 +1,17 @@
+.main-contacto {
+    display: flex;
+    flex-direction: row-reverse;
+    .img-contacto{
+        width: 30%;
+        height: 40%;
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+    .contacto{
+        width: 50%;
+        text-align: center;
+    }
+}

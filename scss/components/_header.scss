@@ -11,18 +11,11 @@ header{
                 width: 70px;
                 }
         }
-    background-color: black;
+    background-color: white;
     margin: 0px;
-    border-bottom: 1px solid black;
     @include flex (flex, center, space-between);
     padding: 30px;
     position: sticky;
     top:0;
 
-    nav {
-        display: flex;
-        flex-wrap: wrap; /* Ajusta los elementos en una fila o columna según el espacio disponible */
-        justify-content: center; /* Centra los elementos horizontalmente */
-        gap: 10px; /* Espaciado entre elementos */
-    }
 }

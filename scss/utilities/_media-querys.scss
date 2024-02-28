@@ -22,6 +22,7 @@
                     "card1 card3 ";
                 gap: 5px;
                 justify-content: center;
+                justify-items: center;
 
                 img {
                     width: 100%;
@@ -48,7 +49,8 @@
                 gap: 4rem;
 
                 img {
-                    @extend %tamaño;
+                    width: 350px;
+                    height: 349px;
                 }
 
                 h2 {
@@ -68,6 +70,14 @@
     }
 
     .main-pages {
+        .anuncio-mujeres{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 90%;
+                object-fit: cover;
+            }
+        }
         .flex-productos {
             display: flex;
             flex-direction: column;
@@ -81,6 +91,12 @@
                 align-content: center;
                 justify-content: space-around;
                 align-items: center;
+                .producto {
+                    img {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
             }
 
             .flex-productos2 {
@@ -90,11 +106,17 @@
                 align-content: center;
                 justify-content: space-around;
                 align-items: center;
+                .producto {
+                    img {
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
             }
 
             .producto {
                 img {
-                    width: auto;
+                    width: 50px;
                 }
             }
         }
@@ -105,7 +127,27 @@
             margin-top: 50px;
 
             h2 {
-                width: 250px;
+                width: 100%;
+            }
+        }
+    }
+
+    footer{
+        .enlaces{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+            width: 40px;
+            height: 40px;
+            justify-content: space-between;
+        }
+        .img-footer {
+            justify-content: end;
+            display: block;
+            margin-right: 100px;
+            img{
+                width: 60px;
             }
         }
     }
@@ -115,8 +157,7 @@
 
         /* Estilos para móviles */
         header {
-            background-color: black;
-            border-bottom: 1px solid black;
+            background-color: white;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -149,6 +190,14 @@
 
         /* Main */
         .main-pages {
+            .anuncio-mujeres{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 90%;
+                    object-fit: cover;
+                }
+            }
             .flex-productos {
                 display: flex;
                 flex-wrap: wrap;
@@ -174,7 +223,8 @@
 
                 .producto {
                     img {
-                        width: auto;
+                        width: 300px;
+                        height: 300px;
                     }
                 }
 

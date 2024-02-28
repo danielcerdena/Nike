@@ -1,4 +1,11 @@
 .main-pages {
+
+    .anuncio-mujeres{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
     .flex-productos {
         display: flex;
         flex-direction: column;
@@ -26,9 +33,13 @@
 
         .producto {
             img {
-                @extend %tamaño;
+                width: 350px;
+                height: 349px;
             }
         }
+    }
+    .swiffy-slider{
+        width: 95%;
     }
 
     .video {
@@ -37,7 +48,7 @@
         margin-top: 50px;
 
         h2 {
-            width: 50rem;
+            width: 100%;
         }
     }
 }

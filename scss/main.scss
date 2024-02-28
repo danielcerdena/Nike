@@ -1,10 +1,11 @@
 @import "utilities/reset";
-@import"utilities/variables";
+@import "utilities/variables";
 @import "utilities/globals";
 @import "utilities/mixin";
-@import"utilities/extends";
+@import "utilities/extends";
 @import "components/header";
 @import "pages/main-index";
-@import "components/main-pages";
+@import "pages/main-pages";
+@import"./pages/main-contacto";
 @import "components/footer";
 @import "utilities/media-querys";

@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Nike|Hombre</title>
-    <link rel="stylesheet" href="./../css/style.css">
     <link rel="stylesheet" href="./../css/main.css">
 </head>
 
@@ -15,28 +14,42 @@
     <!-- Imagen del logo y los links para los distintos html-->
     <header>
         <div class="logo">
-            <img src="./../img/logo-nike-blanco.png" alt="Logo de Nike">
-        </div>
-        <nav>
             <a href="./../index.html">
-                <button type="button" class="btn btn-outline-light">Home</button>
+                <img src="./../img/logo-nike-blanco.png" alt="Logo de Nike">
             </a>
-            <a href="./../pages/destacado.html">
-                <button type="button" class="btn btn-outline-light">Destacados</button>
-            </a>
-            <a href="./../pages/calzado.html">
-                <button type="button" class="btn btn-outline-light">Calzado</button>
-            </a>
-            <a href="./../pages/hombre.html">
-                <button type="button" class="btn btn-outline-light">Hombre</button>
-            </a>
-            <a href="./../pages/mujer.html">
-                <button type="button" class="btn btn-outline-light">Mujer</button>
-            </a>
-            <a href="https://www.google.com/maps/search/nike+caba/@-34.6110586,-58.5152624,12z/data=!3m1!4b1?hl=es&entry=ttu"
-                target="_blank">
-                <button type="button" class="btn btn-outline-light">Sucursales</button>
-            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-white  border-body" data-bs-theme="ligth">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./destacado.html">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./calzado.html">Calzado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./mujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.google.com/maps/search/nike+caba/@-34.6110586,-58.5152624,12z/data=!3m1!4b1?hl=es&entry=ttu"
+                                target="_blank">Sucursales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!--Seccion para poder mostrar disntintos productos-->
@@ -66,38 +79,39 @@
 
             <div class="flex-productos2">
 
-            <div class="producto">
-                <img src="./../img/nike-sportswea1.jpg" alt="Remera de Moda para Hombre">
-                <h2 class="text">Lo nuevo</h2>
-                <h2>Nike Sportswear Club</h2>
+                <div class="producto">
+                    <img src="./../img/nike-sportswea1.jpg" alt="Remera de Moda para Hombre">
+                    <h2 class="text">Lo nuevo</h2>
+                    <h2>Nike Sportswear Club</h2>
+                </div>
+
+
+
+                <div class="producto">
+                    <img src="./../img/nike-be-true1.jpg" alt="Remera Manga Larga de Moda para Hombre">
+                    <h2 class="text">Lo nuevo</h2>
+                    <h2>Nike Be True "Be True 2023"</h2>
+                </div>
+
+
+
+                <div class="producto">
+                    <img src="./../img/jordan-flight-heritage1.jpg" alt="Buzo con Capucha Jordan Unisex">
+                    <h2 class="text">Lo nuevo</h2>
+                    <h2>Jordan Flight Heritage</h2>
+                </div>
+
             </div>
-
-
-
-            <div class="producto">
-                <img src="./../img/nike-be-true1.jpg" alt="Remera Manga Larga de Moda para Hombre">
-                <h2 class="text">Lo nuevo</h2>
-                <h2>Nike Be True "Be True 2023"</h2>
+            <!--Video ilustrativo sobre las Nike Sportswear-->
+            <div class="video">
+                <video src="./../img/nike-sportswear-Club.mp4" autoplay loop width="500" height="500">Nike
+                    Sportswear</video>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt incidunt, repellat a ratione
+                    nesciunt cupiditate ea odit beatae dolorum maiores atque sunt, est error? Tenetur ab dolores qui
+                    dicta?
+                </h2>
             </div>
-
-
-
-            <div class="producto">
-                <img src="./../img/jordan-flight-heritage1.jpg" alt="Buzo con Capucha Jordan Unisex">
-                <h2 class="text">Lo nuevo</h2>
-                <h2>Jordan Flight Heritage</h2>
-            </div>
-
-        </div>
-        <!--Video ilustrativo sobre las Nike Sportswear-->
-        <div class="video">
-            <video src="./../img/nike-sportswear-Club.mp4" autoplay loop width="500" height="500">Nike
-                Sportswear</video>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt incidunt, repellat a ratione
-                nesciunt cupiditate ea odit beatae dolorum maiores atque sunt, est error? Tenetur ab dolores qui dicta?
-            </h2>
-        </div>
-        </section>
+            </section>
     </main>
     <!-- Footer que brinda informacion sobre envios devolucion y atencion al cliente-->
     <footer>
@@ -108,26 +122,8 @@
                 <a href="">X</a>
                 <a href="">TikTok</a>
             </div>
-            <div class="img-footer">
-                <img src="../img/Shipping.jpg" alt="envios" height="60">
-                <p><strong>Envios gratis</strong></p>
-            </div>
-            <div class="img-footer">
-                <img src="./../img/Caja-negra.png" alt="caja" height="60">
-                <p><strong>Devolucion gratis</strong></p>
-            </div>
-            <div class="img-footer">
-                <img src="../img/reloj.jpg" alt="reloj" height="60">
-                <p><strong>Atencion al cliente</strong></p>
-            </div>
-            <div class="img-footer">
-                <img src="../img/locked.jpg" alt="seguro" height="60">
-                <p><strong>Envios seguros</strong></p>
-            </div>
             <div class="position-fixed">
                 <img src="./../img/whatsapp.svg" alt="logo-de-whatsapp">
-            </div>
-
             </div>
         </section>
     </footer>

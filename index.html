@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="nike-icon" href="./img/logo-nike-blanco.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <title>Nike|Home</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -19,64 +22,78 @@
     <header>
         <div class="logo">
             <a href="./pages/calzado.html" title="Logo de Nike">
-                <img src="./img/logo-nike-blanco.png" alt="Logo de Nike">
+                <img src="./img/logo-nike.png" alt="Logo de Nike">
             </a>
             <!-- terminar las imagenes en el header y reemplazar los link por imagenes-->
         </div>
-        <nav>
-            <a href="./index.html">
-            <button type="button" class="btn btn-outline-light">Home</button>
-            </a>
-            <a href="./pages/destacado.html">
-            <button type="button" class="btn btn-outline-light">Destacados</button>
-            </a>
-            <a href="./pages/calzado.html">
-            <button type="button" class="btn btn-outline-light">Calzado</button>
-            </a>
-            <a href="./pages/hombre.html">
-            <button type="button" class="btn btn-outline-light">Hombre</button>
-            </a>
-            <a href="./pages/mujer.html">
-            <button type="button" class="btn btn-outline-light">Mujer</button>
-            </a>
-            <a href="https://www.google.com/maps/search/nike+caba/@-34.6110586,-58.5152624,12z/data=!3m1!4b1?hl=es&entry=ttu" target="_blank">
-            <button type="button" class="btn btn-outline-light">Sucursales</button>
-            </a>
+        <nav class="navbar navbar-expand-lg bg-white  border-body" data-bs-theme="ligth">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/destacado.html">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/calzado.html">Calzado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/hombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/mujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://www.google.com/maps/search/nike+caba/@-34.6110586,-58.5152624,12z/data=!3m1!4b1?hl=es&entry=ttu"
+                                target="_blank">Sucursales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="main-index">
         <div class="anuncio">
-            <img src="./img/anuncio1.jpg" alt="Just do it">
+            <img src="./img/anuncio1.jpg" alt="Just do it" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="3000">
         </div>
         <!--Seccion para poder mostrar disntintos productos-->
 
         <article class="imagenes">
             <div class="card1">
-                <a href="./pages/hombre.html" title="Hombre">
+                <a href="./pages/hombre.html" title="Hombre" data-aos="fade-right" data-aos-duration="3000">
                     <img src="./img/hombre.webp" alt="Hombre">
                 </a>
             </div>
             <div class=" card2">
-                <a href="./pages/mujer.html" title="Mujer">
+                <a href="./pages/mujer.html" title="Mujer" data-aos="fade-left" data-aos-duration="2000">
                     <img src="./img/mujer.webp" alt="Mujer">
                 </a>
             </div>
             <div class=" card3">
-                <a href="./pages/calzado.html" title="Calzado">
+                <a href="./pages/calzado.html" title="Calzado" data-aos="fade-left" data-aos-duration="3000">
                     <img src="./img/calzado.webp" alt="Calzado">
                 </a>
             </div>
         </article>
         <!--Video ilustrativo sobre las Jordan 11 retro-->
         <div class="anuncio-descuento">
-            <img src="./img/anuncio-descuento.jpg" alt="anuncio-descuento">
+            <img src="./img/anuncio-descuento.jpg" alt="anuncio-descuento" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
         </div>
         <h1>Productos</h1>
 
         <article class="productos">
 
             <div class="producto">
-                <a href="./pages/lebron.html" title="Buzo con Capucha de Basquet para Hombre" target="_blank">
+                <a href="./pages/lebron.html" title="Buzo con Capucha de Basquet para Hombre" target="_blank"
+                    data-aos="fade-right" data-aos-duration="3000">
                     <img src="./img/buzo-lebron1.jpg" alt="Buzo con Capucha de Basquet para Hombre">
                 </a>
                 <h2 class="text">Lo nuevo</h2>
@@ -84,7 +101,8 @@
             </div>
 
             <div class="producto">
-                <a href="./pages/satou.html" title="Buzo Jordan para Mujer" target="_blank">
+                <a href="./pages/satou.html" title="Buzo Jordan para Mujer" target="_blank" data-aos="zoom-in"
+                    data-aos-duration="3000">
                     <img src="./img/buzo-satou1.jpg" alt="Buzo Jordan para Mujer">
                 </a>
                 <h2 class="text">Lo nuevo</h2>
@@ -92,14 +110,15 @@
             </div>
 
             <div class="producto">
-                <a href="./pages/heritage.html" title="Buzo Jordan para Mujer" target="_blank">
+                <a href="./pages/heritage.html" title="Buzo Jordan para Mujer" target="_blank" data-aos="fade-left"
+                    data-aos-duration="3000">
                     <img src="./img/jordan-flight-heritage1.jpg" alt="Buzo con Capucha Jordan Unisex">
                 </a>
                 <h2 class="text">Lo nuevo</h2>
                 <h2>Jordan Flight Heritage</h2>
             </div>
         </article>
-        <div class="just-do-it">
+        <div class="just-do-it" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <img src="./img/anuncio-nike.jpg" alt="anuncio-de-nike">
         </div>
     </main>
@@ -111,30 +130,22 @@
                 <a href="https://www.instagram.com/nike/" target="_blank">Instagram</a>
                 <a href="https://twitter.com/Nike" target="_blank">X</a>
                 <a href="https://www.tiktok.com/@nike" target="_blank">TikTok</a>
-            </div>
-            <div class="img-footer">
-                <img src="./img/Shipping.jpg" alt="envios" height="60">
-                <p><strong>Envios gratis</strong></p>
-            </div>
-            <div class="img-footer">
-                <img src="./img/Caja-negra.png" alt="caja" height="60">
-                <p><strong>Devolucion gratis</strong></p>
-            </div>
-            <div class="img-footer">
-                <img src="img/reloj.jpg" alt="reloj" height="60">
-                <p><strong>Atencion al cliente</strong></p>
-            </div>
-            <div class="img-footer">
-                <img src="img/locked.jpg" alt="seguro" height="60">
-                <p><strong>Envios seguros</strong></p>
+                <a href="./pages/contacto.html" target="_blank">Contacto</a>
             </div>
             <div class="position-fixed">
                 <img src="./img/whatsapp.svg" alt="logo-de-whatsapp">
             </div>
-            </div>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
 </body>
 
 </html>

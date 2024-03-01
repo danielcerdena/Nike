@@ -1,3 +1,4 @@
+/*main index*/
 .main-index{
     .anuncio{
             img{
@@ -40,8 +41,10 @@
             grid-template-columns: repeat(3,1fr);
             gap: 8rem;
             img{
-                @extend %tamano;
+                width: 350px;
+                height: 350px;
             }
+            /**/
             h2{
                 text-align: center;
                 margin-bottom: 10px;

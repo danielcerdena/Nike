@@ -1,17 +1,47 @@
+/*main contacto*/
 .main-contacto {
     display: flex;
     flex-direction: row-reverse;
-    .img-contacto{
+
+    .img-contacto {
         width: 30%;
         height: 40%;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
 
         }
     }
-    .contacto{
-        width: 50%;
+
+    .contacto {
+        color:white ;
+        width: 70%;
         text-align: center;
+        background-color: rgb(20, 18, 18);
+        align-items: flex-start;
+    }
+
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .nombre{
+        width: 50%;
+    }
+
+    .email{
+        width: 50%;
+    }
+    .texto{
+        width: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: flex-start
     }
 }

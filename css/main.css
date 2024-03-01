@@ -26,7 +26,7 @@ h1 {
   color: coral;
 }
 
-.main-index .productos img {
+.tamano {
   width: 349px;
   height: 350px;
 }
@@ -35,9 +35,11 @@ h1 {
 header {
   background-color: white;
   margin: 0px;
+  /*mixin*/
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /**/
   padding: 30px;
   position: sticky;
   top: 0;
@@ -54,6 +56,7 @@ header .logo img {
   width: 70px;
 }
 
+/*main index*/
 .main-index .anuncio img {
   width: 100%;
   height: 20rem;
@@ -91,6 +94,11 @@ header .logo img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8rem;
+  /**/
+}
+.main-index .productos img {
+  width: 350px;
+  height: 350px;
 }
 .main-index .productos h2 {
   text-align: center;
@@ -102,6 +110,7 @@ header .logo img {
   margin-bottom: 25px;
 }
 
+/*main pages*/
 .main-pages .anuncio-mujeres {
   display: flex;
   justify-content: center;
@@ -131,7 +140,7 @@ header .logo img {
 }
 .main-pages .flex-productos .producto img {
   width: 350px;
-  height: 349px;
+  height: 350px;
 }
 .main-pages .swiffy-slider {
   width: 95%;
@@ -145,6 +154,7 @@ header .logo img {
   width: 100%;
 }
 
+/*main contacto*/
 .main-contacto {
   display: flex;
   flex-direction: row-reverse;
@@ -158,10 +168,35 @@ header .logo img {
   height: 100%;
 }
 .main-contacto .contacto {
-  width: 50%;
+  color: white;
+  width: 70%;
   text-align: center;
+  background-color: rgb(20, 18, 18);
+  align-items: flex-start;
+}
+.main-contacto .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.main-contacto .nombre {
+  width: 50%;
+}
+.main-contacto .email {
+  width: 50%;
+}
+.main-contacto .texto {
+  width: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
 }
 
+/*footer*/
 footer {
   width: 100%;
   background-color: black;
@@ -178,8 +213,9 @@ footer .enlaces {
   height: 40px;
   justify-content: space-between;
 }
-footer .enlaces a img {
-  width: 20px;
+footer .enlaces a {
+  text-decoration: none;
+  color: white;
 }
 footer .position-fixed {
   position: fixed;
@@ -240,56 +276,83 @@ footer .position-fixed img {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+  /*main pages mediaquery tablet*/
+  .main-pages .anuncio-mujeres {
+    display: flex;
+    justify-content: center;
+  }
+  .main-pages .anuncio-mujeres img {
+    width: 90%;
+    object-fit: cover;
+  }
+  .main-pages .flex-productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main-pages .flex-productos .flex-productos1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-pages .flex-productos .flex-productos1 .producto img {
+    width: 300px;
+    height: 300px;
+  }
+  .main-pages .flex-productos .flex-productos2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-pages .flex-productos .flex-productos2 .producto img {
+    width: 300px;
+    height: 300px;
+  }
+  .main-pages .flex-productos .producto img {
+    width: 50px;
+  }
+  .main-pages .video {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .main-pages .video h2 {
+    width: 100%;
+  }
+  /*main contacto mediaquery tablet*/
+  .main-contacto {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: center;
+  }
+  .contacto {
+    width: 100%;
+  }
+  .img-contacto {
+    display: none;
+  }
+  .formulario {
+    gap: 20px;
+    width: 100%;
+  }
+  .nombre {
+    width: 100%;
+  }
+  .email {
+    width: 100%;
+  }
+  .texto {
+    width: 100%;
+  }
 }
-.main-pages .anuncio-mujeres {
-  display: flex;
-  justify-content: center;
-}
-.main-pages .anuncio-mujeres img {
-  width: 90%;
-  object-fit: cover;
-}
-.main-pages .flex-productos {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.main-pages .flex-productos .flex-productos1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
-  align-items: center;
-}
-.main-pages .flex-productos .flex-productos1 .producto img {
-  width: 300px;
-  height: 300px;
-}
-.main-pages .flex-productos .flex-productos2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
-  align-items: center;
-}
-.main-pages .flex-productos .flex-productos2 .producto img {
-  width: 300px;
-  height: 300px;
-}
-.main-pages .flex-productos .producto img {
-  width: 50px;
-}
-.main-pages .video {
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
-}
-.main-pages .video h2 {
-  width: 100%;
-}
-
+/*footer mediaquery tablet*/
 footer .enlaces {
   display: flex;
   align-items: center;
@@ -336,7 +399,7 @@ footer .img-footer img {
   .logo img {
     width: 40px;
   }
-  /* Main */
+  /* Main pages mediaquery movil */
   .main-pages .anuncio-mujeres {
     display: flex;
     justify-content: center;
@@ -384,6 +447,7 @@ footer .img-footer img {
   .main-pages .flex-productos .video h2 {
     width: 300px;
   }
+  /*main index mediaquery movil*/
   .main-index .anuncio img {
     width: 100%;
     height: 5rem;
@@ -425,6 +489,32 @@ footer .img-footer img {
   .main-index .productos .producto img {
     width: 250px;
     height: 250px;
+  }
+  /*main contacto mediaquery movil*/
+  .main-contacto {
+    justify-content: center;
+  }
+  .main-contacto .img-contacto {
+    display: none;
+  }
+  .main-contacto .contacto {
+    width: 100%;
+  }
+  .main-contacto .formulario {
+    gap: 20px;
+    justify-content: center;
+  }
+  .main-contacto .nombre {
+    width: 100%;
+  }
+  .main-contacto .email {
+    width: 100%;
+  }
+  .main-contacto .texto {
+    width: 100%;
+  }
+  .main-contacto .texto textarea {
+    width: 100%;
   }
 }
 
